@@ -6,6 +6,10 @@
 - conflic 
 - local >> data on your laptop
 - remote >> data on server like github   
+# ~~~
+- git config -g user.name {user name} // -g short for -global
+- git config -g user.email {user email}
+
 
 
 # Comment  (ctrl + j)  
