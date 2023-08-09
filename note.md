@@ -12,16 +12,34 @@
 
 
 
-# Comment  (ctrl + j)  
+# Terminal  (ctrl + j)  
 - clear >> clear terminal
 - git init >> turn project into git repo
 - git status >> status & all file in project
 - git add + name file >> save file
 - git add . >> save all file
-- git reset >> delete all file from git
 - git commit -m'initial commit' >> note to mark time scale of project
-- git log >>  show time file's saved
+-  git -am 'write commit here' >> short for git add + git commit
+      // this only bring the change from tracked file >> only modify file can be committed
+- git config alias :
+              > fit config --global alias.name 'cmt && cmt'
+  
+- git reset 
+      > git reset HEAD~1 >> reseet master branch to 1 commit earlier
+      > git reset --soft HEAD~1 >> remove commit from github but it will give u back the changes to your local editor
+      > git reset --hard HEAD~1>> remove everything
+  
+- git stash >>  save change in my local editor  
+- git branch >> show current branch
+- git checkout + branch wanna switch
+- git stash apply >> apply into branch u want
+
+- git log >>  show commit & time file's saved
 - git log --oneline >> the same with git log but it's shorten
+- git log  --graph --decorae --oneline >> also show commit & time file's saved but it's prettier
+- git log -S 'keyword' >> search commit by keyword
+
+  
 - git checkout {id commit} >> return to commit before
 - git checkout  {branch name} >> return to present commit
 - git branch >> show default / present branch
